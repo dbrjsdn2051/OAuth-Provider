@@ -267,3 +267,8 @@ public String exchangeCodeForToken(String tokenUri, LinkedMultiValueMap<String, 
 - 확실히 편한 라이브러리를 사용하지 않고 진행하다보니 OAuth 가 어떻게 동작되는지 제대로 학습하게된 계기가 된것같습니다.
 - 해당과제에 요구사항은 간단했지만 많은 부분을 생각하고 학습하고 구현했기 때문에 매우 재미있는 과제였던거 같습니다.
 - Spring Security 와 OAuth Client 에 내부구조로 한번 제대로 공부해야겠다는 생각이 들었습니다. (학습비용은 크겠지만…. )
+
+
+<br><br><br><br><br><br><br>
+
+블로그 링크 : https://velog.io/@dbrjsdn2051/OAuth2-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0
