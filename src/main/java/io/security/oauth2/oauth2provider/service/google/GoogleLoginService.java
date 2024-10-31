@@ -17,25 +17,25 @@ import java.util.LinkedHashMap;
 public class GoogleLoginService implements LoginService {
 
     @Value("${oauth2.google.client-id}")
-    public String clientId;
+    private String clientId;
 
     @Value("${oauth2.google.client-secret}")
-    public String clientSecret;
+    private String clientSecret;
 
     @Value("${oauth2.google.authorization-uri}")
-    public String authorizationUri;
+    private String authorizationUri;
 
     @Value("${oauth2.google.token-uri}")
-    public String tokenUri;
+    private String tokenUri;
 
     @Value("${oauth2.google.redirect-uri}")
-    public String redirectUri;
+    private String redirectUri;
 
     @Value("${oauth2.google.response-type}")
-    public String responseType;
+    private String responseType;
 
     @Value("${oauth2.google.grant-type}")
-    public String grantType;
+    private String grantType;
 
     private final QueryParamBuilder queryParamBuilder;
     private final RestClientService restClientService;

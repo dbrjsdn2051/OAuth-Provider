@@ -18,25 +18,25 @@ import java.util.HashMap;
 public class KakaoLoginService implements LoginService {
 
     @Value("${oauth2.kakao.client-id}")
-    public String clientId;
+    private String clientId;
 
     @Value("${oauth2.kakao.authorization-uri}")
-    public String authorizationUri;
+    private String authorizationUri;
 
     @Value("${oauth2.kakao.token-uri}")
-    public String tokenUri;
+    private String tokenUri;
 
     @Value("${oauth2.kakao.redirect-uri}")
-    public String redirectUri;
+    private String redirectUri;
 
     @Value("${oauth2.kakao.response-type}")
-    public String responseType;
+    private String responseType;
 
     @Value("${oauth2.kakao.code}")
-    public String code;
+    private String code;
 
     @Value("${oauth2.kakao.grant-type}")
-    public String grantType;
+    private String grantType;
 
     private final QueryParamBuilder queryParamBuilder;
     private final RestClientService restClientService;
