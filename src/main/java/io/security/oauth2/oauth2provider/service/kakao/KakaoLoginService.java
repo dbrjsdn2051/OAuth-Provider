@@ -38,6 +38,9 @@ public class KakaoLoginService implements LoginService {
     @Value("${oauth2.kakao.grant-type}")
     private String grantType;
 
+    @Value("${oauth2.kakao.client-secret}")
+    private String clientSecret;
+
     private final QueryParamBuilder queryParamBuilder;
     private final RestClientService restClientService;
 
@@ -55,6 +58,7 @@ public class KakaoLoginService implements LoginService {
     @Override
     public String getToken(String code) {
         LinkedMultiValueMap<String, String> body = new LinkedMultiValueMap<>();
+        body.add("client_secret", clientSecret);
         body.add("client_id", clientId);
         body.add("redirect_uri", redirectUri);
         body.add("grant_type", grantType);
