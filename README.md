@@ -258,7 +258,7 @@ public String exchangeCodeForToken(String tokenUri, LinkedMultiValueMap<String, 
 - `tokenUri` 를 통해 `POST` 방식으로 `body`에 데이터가 담겨서 통신하게됩니다.
 - 통신을 하고 난후 데이터는 `Map.class`  데이터를 바인딩해준후 `Access Token` 정보를 꺼낸후 반환하게 됩니다.
 
-<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
 
 
 > 📖 톺아보기
